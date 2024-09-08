@@ -18,14 +18,14 @@
 - But that's not the right approach, instead use CDN
 
 
-## CDN (Content Delivery Network)
+## Object store & CDN (Content Delivery Network)
 
 - As the name suggests, it’s an optimal way for you to deliver content (mp4 files, jpg and even HTML/CSS/JS files) to your users.
 - It is better than serving it from a VM/EC2 instances because of a few reasons
   - EC2 machine server runs only at one region, hence user will have to send request far again & again
-- CDN have multiple POP (point of presence) all over world and they caches the data so particular region users access that cached data 
+- **CDN** have multiple POP (point of presence) all over world and they caches the data so particular region users access that cached data 
 - For frontend, mp4 files, images, Object stores  + CDNs are a better approach.
-- Object stores like `S3 (Simple storage service)`  let's you store objects and provides their access link, and we can use this link in CDN like CloudFront we distribute over the internet.
+- **Object stores** like `S3 (Simple storage service)`  let's you store objects and provides their access link, and we can use this link in CDN like CloudFront we distribute over the internet.
 - You might be tempted to open your S3 bucket at this point and access the content directly, but don’t
 - Your S3 bucket should be blocked by default, and you should allow cloudfront (CDN) to access it.
 - CloudFront lets you add sub-domain, certificates etc
