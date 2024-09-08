@@ -1,0 +1,1 @@
+# Frontend deployment on Object store and CDN (Cloud Delivery Network)
